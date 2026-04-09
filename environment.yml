@@ -1,0 +1,44 @@
+name: agentic-ai-demo
+channels:
+  - conda-forge
+defaults dependencies:
+  - python=3.11
+  - pip
+  - git
+  - nodejs
+  - cudatoolkit=12.1 # change/remove to match your GPU/drivers
+pip:
+   ## Core agent/LLM libraries
+  - uv
+  - crewai
+  - langchain>=0.0.300
+  - transformers>=4.35
+  - accelerate
+  - sentencepiece
+  - tokenizers
+  - peft
+  - safetensors
+  - text-generation
+  - llama-cpp-python>=0.1.56
+  - bitsandbytes
+  - openai
+  ## Web / demo server
+  - fastapi
+  - uvicorn
+  - starlette
+  - aiohttp
+  - python-multipart
+  - pydantic
+  ## Data science / visualization
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyterlab
+  ## Utilities
+  - rich
+  - nest-asyncio
+  - python-dotenv
+  - duckduckgo-search
